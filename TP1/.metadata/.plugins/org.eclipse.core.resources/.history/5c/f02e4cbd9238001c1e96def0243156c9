@@ -1,0 +1,14 @@
+package fr.unilim.fr;
+
+import org.junit.Test;
+import static org.mockito.Mockito.mock;  
+import static org.mockito.Mockito.when;
+
+public class TestDoublures {
+	@Test
+	public void test_UnPremierStub() {
+
+		User user = mock(User.class); //création de la doublure
+		when(user.getLogin()).thenReturn("alice"); //bouchonnage de la doublure
+	}
+}

@@ -1,0 +1,10 @@
+package firstdoublure;
+
+public class UserServiceImpl implements UserService {
+
+	public User createUser(String firstname, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

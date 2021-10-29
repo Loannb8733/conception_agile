@@ -1,0 +1,21 @@
+package fr.unilim.fr;
+
+import org.junit.Test;
+import static org.mockito.Mockito.mock;  
+import static org.mockito.Mockito.when;
+import static org.junit.Assert.assertEquals;
+
+
+public class TestDoublures {
+	@Test
+	public void test_UnPremierStub() {
+
+		User user = mock(User.class); //création de la doublure
+		when(user.getLogin()).thenReturn("alice"); //bouchonnage de la doublure
+		
+		System.out.println(user.getLogin());
+		
+		assertEquals(user.getLogin(), "alice");
+		assertEquals(user.getLogin(), "bob");
+	}
+}

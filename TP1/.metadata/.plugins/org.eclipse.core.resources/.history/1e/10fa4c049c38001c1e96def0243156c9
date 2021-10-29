@@ -1,0 +1,24 @@
+package gameofdices;
+
+import org.junit.Test;
+
+import static org.mockito.Mockito.*;
+
+import java.util.*;
+
+import static org.junit.Assert.*;
+
+public class gameOfDicesTest {
+	
+	@Test
+	public void rollReturnsAValue() {
+		Dice theDice = new Dice(new Random());
+		
+		for (int i = 0; i < 100; i++) {
+			int result = theDice.roll();
+			
+			assertTrue(result >= 1);
+			assertTrue(result <= 6);
+		}
+	}
+}

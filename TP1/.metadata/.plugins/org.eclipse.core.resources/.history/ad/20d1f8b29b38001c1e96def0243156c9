@@ -1,0 +1,29 @@
+package gameofdices;
+
+import org.junit.Test;
+
+import static org.mockito.Mockito.*;  
+import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.atLeastOnce;
+import static org.mockito.Mockito.atLeast;
+import static org.mockito.Mockito.atMost;
+
+import java.util.LinkedList;
+
+
+import static org.junit.Assert.assertEquals;
+
+public class gameOfDicesTest {
+	@Test
+	public void rollReturnsAValue() {
+		theDice = new Dice(new Random());
+		for (int i = 0; i < 100; i++) {
+			int result = theDice.roll();
+			assertTrue(result >= 1);
+			assertTrue(result <= 6);
+		}
+	}
+}

@@ -1,0 +1,21 @@
+package gameofdices;
+
+public class Player {
+	
+	private String name;
+	private Dice dice;
+	private Optional<Integer> lastValue = Optional.empty();
+
+	public Player(String name, Dice dice) {
+		this.name = name;
+		this.dice = dice;
+	}
+
+	public void play() {
+		this.lastValue = Optional.of(dice.roll());
+	}
+
+	public Optional<Integer> getLastValue() {
+		return lastValue;
+	}
+}

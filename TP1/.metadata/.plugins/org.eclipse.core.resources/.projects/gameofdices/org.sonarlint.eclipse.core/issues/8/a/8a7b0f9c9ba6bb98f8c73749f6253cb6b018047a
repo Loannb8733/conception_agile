@@ -1,0 +1,9 @@
+
+}	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(§÷¾™ÿÿÿÿÿ8™¼ØÚÌ/H RMAJORZ
+CODE_SMELL
+w
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(›èj8™¼ØÚÌ/H¡RMINORZ
+CODE_SMELL
+¿
+java:S2681"†This line will not be executed conditionally; only the first line of this 2-line block will be. The rest will execute unconditionally.(áÿèˆıÿÿÿÿ8™¼ØÚÌ/H¤RMAJORZ
+CODE_SMELL
